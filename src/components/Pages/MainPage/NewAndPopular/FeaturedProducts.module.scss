@@ -1,0 +1,76 @@
+$main: rgb(255, 255, 255, 0.4);
+$hover: red;
+
+.featured {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 100%;
+    display: grid;
+
+    .radio {
+        place-self: center;
+        display: flex;
+
+        gap: 50px;
+
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 21px;
+
+        color: $main;
+
+        .checkbox {
+            display: none;
+            opacity: 0;
+        }
+
+        .item {
+            text-transform: uppercase;
+            cursor: pointer;
+            position: relative;
+
+            &:hover {
+                color: white;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 0;
+
+                height: 2px;
+
+                background-color: red;
+                bottom: -7px;
+
+
+            }
+
+        }
+
+        input[type="radio"]:checked+label {
+            color: white;
+
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    .cards {
+        margin-top: 37px;
+        display: flex;
+        justify-content: center;
+       
+        flex-wrap: wrap;
+        gap: 18px;
+        
+        @media (max-width: 612px) {
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+            // padding: 0 20px;
+        }
+    }
+}

@@ -1,0 +1,167 @@
+.wrapper {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+     height: 100svh;
+    left: 0;
+    right: -200vw;
+    opacity: 0;
+    visibility: hidden;
+
+    z-index: 4;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cart {
+    padding: 1rem;
+
+    width: 50%;
+    min-width: 290px;
+    max-width: 500px;
+    //  height: 100svh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+
+    background: #272727;
+    border-radius: 5px 0 0 5px;
+    color: white;
+    z-index: 5;
+
+    & .exit {
+        display: flex;
+        justify-content: flex-end;
+
+        & button {
+            padding: 8px;
+            font-size: 1rem;
+        }
+    }
+}
+
+.items {
+    flex: 1;
+    overflow-y: scroll;
+
+    /* width */
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.242);
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: rgba(154, 16, 16, 0.725);
+        border-radius: 20px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: rgba(94, 20, 20, 0.703);
+    }
+}
+
+.title {
+    margin-bottom: 2rem;
+}
+
+.item {
+    margin-bottom: 1rem;
+    display: flex;
+
+}
+
+.left {
+    width: 30%;
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left img {
+    width: 100%;
+    max-height: 40vh;
+    object-fit: cover;
+}
+
+.center {
+    width: 50%;
+    padding: 1rem 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right {
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: rgb(237, 31, 31);
+    opacity: .7;
+    transition: all .3s ease-in-out;
+}
+
+.right:hover {
+    color: red;
+    opacity: 1;
+    scale: 1.2;
+}
+
+.subtotal {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subtotal h2 {
+    text-transform: uppercase;
+}
+
+.subtotal span {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.btn {
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    display: block;
+    border: none;
+    background-color: transparent;
+    border: 1px solid red;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: red;
+}
+
+.reset {
+    display: block;
+    text-transform: capitalize;
+
+    margin-top: 1rem;
+    border: none;
+    background-color: transparent;
+    color: red;
+    cursor: pointer;
+}

@@ -1,0 +1,86 @@
+.card {
+    display: block;
+    position: relative;
+    max-width: 286px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 1rem;
+
+    color: white;
+
+    @media (max-width: 412px) {
+
+        width: 45%;
+    }
+
+    @media (min-width: 412px) {
+
+        width: 30%;
+    }
+
+    @media (min-width: 612px) {
+
+        width: 45%;
+    }
+
+    .bgImg {
+        display: grid;
+        aspect-ratio: 9/16;
+        max-height: 412px;
+        width: 100%;
+
+        background: #272727;
+        border-radius: 1.2rem;
+        margin-bottom: 12px;
+
+        img {
+            place-self: center;
+
+
+            width: calc(100% - 20px);
+        }
+
+        .addBtn {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 38px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+
+            background-color: #373737;
+
+            &:hover {
+                background-color: red;
+            }
+        }
+
+        .in {
+            background-color: red;
+        }
+
+
+
+    }
+
+    .text {
+        margin-top: 12px;
+        font-weight: 500;
+    }
+
+    .price {
+
+        display: flex;
+        gap: 28px;
+
+
+        div {
+
+            color: red;
+        }
+    }
+}

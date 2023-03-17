@@ -1,0 +1,37 @@
+.enter {
+    opacity: 0;
+    visibility: hidden;
+    right: -200vw !important;
+}
+
+.enterActive {
+    opacity: 1;
+    visibility: initial;
+    right: 0 !important;
+    transition: all 500ms ease-in-out;
+}
+
+.enterDone {
+    opacity: 1;
+    visibility: initial;
+    right: 0 !important;
+}
+
+.exit {
+    opacity: 1;
+    visibility: initial;
+    right: 0 !important;
+}
+
+.exitActive {
+    opacity: 0;
+    visibility: hidden;
+    right: -200vw !important;
+    transition: all 500ms ease-in-out;
+}
+
+.exitDone {
+    opacity: 0;
+    visibility: hidden;
+    right: -200vw !important;
+}

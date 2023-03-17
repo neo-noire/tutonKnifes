@@ -1,0 +1,101 @@
+.footer {
+    padding-top: 20px;
+    background: #272727;
+    color: white;
+
+    .wrapper {
+        padding: 15px;
+
+        max-width: 1198px;
+        margin: 44px auto;
+
+        .top {
+            display: flex;
+            gap: 60px;
+
+            @media (max-width: 775px) {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+
+        .logo {
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 17px;
+
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 20px;
+            max-width: 400px;
+
+            @media (max-width: 775px) {
+                max-width: fit-content;
+            }
+        }
+
+        .center {
+            .links {
+                h3 {
+                    font-weight: 600;
+                    font-size: 17px;
+                    line-height: 28px;
+                }
+
+                ul {
+                    margin-top: 14px;
+                    list-style: none;
+                    padding: 0;
+
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 12px 24px;
+
+                    li {
+                        opacity: .5;
+                    }
+
+                    li:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .right {
+
+            .contacts {
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+
+                @media (max-width: 775px) {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 12px;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        padding: 15px;
+
+        background: #373737;
+        padding: 30px;
+
+        .copyright {
+            max-width: 1198px;
+            margin: 0 auto;
+        }
+    }
+}

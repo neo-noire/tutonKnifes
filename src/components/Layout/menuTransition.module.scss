@@ -1,0 +1,25 @@
+.enter {
+    left: -200vw !important;
+}
+
+.enterActive {
+    left: 0 !important;
+    transition: all 500ms ease-in-out;
+}
+
+.enterDone {
+    left: 0 !important;
+}
+
+.exit {
+    left: 0 !important;
+}
+
+.exitActive {
+    left: -200vw !important;
+    transition: all 500ms ease-in-out;
+}
+
+.exitDone {
+    left: -200vw !important;
+}

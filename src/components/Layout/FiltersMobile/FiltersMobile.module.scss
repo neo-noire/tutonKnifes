@@ -1,0 +1,52 @@
+
+
+.filtersMobile {
+    
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 1rem;
+    /* p / regular */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    background: #373737;
+    z-index: 10;
+
+    /* identical to box height */
+
+    .filterButton {
+        position: absolute;
+        left: 0;
+
+        font-size: .5rem;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        padding: .5rem .4rem;
+        border: 1px solid gray;
+        
+        z-index: 10;
+        
+    }
+    
+    .filters {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        transform: translateY(2.4rem);
+        min-width: 300px;
+        max-width: 100vw;
+        height: fit-content;
+        background: #373737;
+        padding: 1rem 0;
+
+        z-index: 10;
+    }
+
+}

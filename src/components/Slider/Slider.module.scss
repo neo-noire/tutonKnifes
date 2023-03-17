@@ -1,0 +1,106 @@
+.hero {
+    position: relative;
+
+    img {
+        object-fit: cover;
+
+        @media (min-width: 1350px) {
+            width: 100vw;
+        }
+    }
+}
+
+.slider {
+    height: calc(75vh - 80px);
+    min-height: 400px;
+    width: 100%;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    width: 400vw;
+    height: 100%;
+    display: flex;
+
+    transition: all 1s ease;
+}
+
+.container img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+.icons {
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    bottom: 0;
+    transform: translateY(-50%);
+
+
+
+}
+
+.dots {
+    display: flex;
+    gap: 1rem;
+}
+
+.dot {
+    @media (max-width: 612px) {
+        position: relative;
+        bottom: 1rem;
+    }
+
+    label {
+        cursor: pointer;
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: white;
+        border-radius: 50%;
+    }
+
+    input {
+        display: none;
+        opacity: 0;
+    }
+
+
+
+
+    input[type="radio"]:checked~label {
+        background: red;
+
+    }
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    color: bisque;
+    border: 1px solid bisque;
+    cursor: pointer;
+
+    @media (max-width: 612px) {
+        display: none;
+        visibility: hidden;
+    }
+
+
+}

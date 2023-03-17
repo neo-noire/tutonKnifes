@@ -1,0 +1,33 @@
+$main: rgb(255, 255, 255, 0.4);
+$hover: red;
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    cursor: pointer;
+
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+
+    /* identical to box height */
+
+    color: $main;
+
+    .icon {
+        fill: $main;
+    }
+
+    &:hover,
+    &>input:checked {
+        color: $hover;
+
+        .icon {
+            fill: $hover;
+        }
+    }
+}
